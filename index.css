@@ -1,0 +1,138 @@
+body {
+  background-color: #f5f8ff;
+  font-family: "Noto Sans", sans-serif;
+  color: #252b42;
+}
+.text-Mblue {
+  /* color: rgb(0, 129, 208); */
+  color: #13a6ff;
+}
+.text-Mblack {
+  color: #252b42;
+}
+.bg-Mblue {
+  /* background-color: #0081d0; */
+  background-color: #13a6ff;
+}
+
+.header {
+  box-shadow: 0px 13px 19px 3px rgba(0, 0, 0, 0.07);
+}
+.logo-img--bg {
+  background: url("./image/logo.png") top center / cover no-repeat;
+  width: 240px;
+  height: 36px;
+}
+.btn {
+  background-color: rgb(19, 166, 255);
+  border-radius: 10px;
+}
+
+.about {
+  height: 100%;
+  /* background-position: 15% 20%; */
+  background: url("./image/family1.webp") top center/ cover no-repeat;
+}
+.text-shadow {
+  text-shadow: rgb(40, 40, 40) 1px 2px 3px;
+}
+.logoClient {
+  /* max-width: 150px; */
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.logoClient:hover {
+  transform: scale(1.1);
+}
+.marquee {
+  overflow: hidden;
+}
+.marquee-content {
+  animation: scrolling 9s linear infinite running;
+}
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-30%);
+  }
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+blockquote:before,
+blockquote:after {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+.input-Cal {
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+}
+.input-Cal:focus {
+  /* border: none; */
+  outline: red;
+}
+.calc-box {
+  box-shadow: -10px -10px 20px rgb(255 255 255 / 25%),
+    5px 5px 24px rgb(72 63 168 / 40%);
+}
+h1 {
+}
+@media (min-width: 1280px) {
+  .CTN {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 426px) {
+  .CTN {
+    margin: 0 16px;
+  }
+  .logo-img--bg {
+    max-width: 130px;
+    max-height: 19px;
+  }
+  .advantage br {
+    display: none;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+/* .toast {
+  right: -100px;
+} */
+.toastEffect {
+  animation: slideInLeft ease 0.6s, disappear linear 1s 4s forwards;
+  /* display: flex !important;  */
+  top: 32px;
+  right: 32px;
+}
+.cantClick {
+  display: none;
+}
