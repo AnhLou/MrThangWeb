@@ -32,7 +32,9 @@
     <div class="bg-white py-4 header fixed top-0 left-0 w-full z-50">
       <div class="CTN">
         <div class="flex justify-between items-center">
-          <div class="logo-img--bg"></div>
+          <a href="#about"
+            ><p class="text-2xl font-bold cursor-pointer">Shinhan Bank</p></a
+          >
           <button
             class="btn text-white py-2 px-6 font-bold md:text-lg text-xs"
             data-modal-target="authentication-modal"
@@ -44,7 +46,7 @@
       </div>
     </div>
     <section id="about " style="height: 100vh">
-      <div class="about">
+      <div id="about" class="about">
         <div class="CTN">
           <div
             data-aos="fade-down"
@@ -957,7 +959,7 @@
         </div>
       </div>
     </section>
-    <section id="footer">
+    <!-- <section id="footer">
       <footer>
         <div class="bg-[#0081D0]">
           <div class="CTN md:py-12 py-9 text-white">
@@ -996,9 +998,50 @@
           </div>
         </div>
       </footer>
+    </section> -->
+    <section id="footer">
+      <footer>
+        <div class="bg-white">
+          <div class="CTN">
+            <div class="pt-16 pb-9">
+              <div class="md:flex justify-between">
+                <div class="grid gap-5 h-fit mb-8 md:mb-0">
+                  <h3 class="text-2xl font-bold">Shinhan Bank</h3>
+                  <p class="text-d-second">
+                    Hiện thực hóa mọi kế hoạch <br />
+                    của quý khách
+                  </p>
+                </div>
+                <div class="grid gap-4 mb-8 md:mb-0">
+                  <h3 class="h3">Vay tín chấp cá nhân</h3>
+                  <p class="text-d-second">Vay theo bảng lương</p>
+                  <p class="text-d-second">Vay theo hợp đồng vay cũ</p>
+                  <p class="text-d-second">Vay theo hóa đơn</p>
+                  <p class="text-d-second">Vay theo bảo hiểm nhân thọ</p>
+                </div>
+                <div class="grid md:gap-5 h-fit">
+                  <h3 class="h3 font-bold">Khách hàng cá nhân liên hệ</h3>
+                  <div class="flex gap-2 items-center">
+                    <i
+                      class="ri-phone-line text-2xl text-d-second hover:text-blue-500"
+                    ></i>
+                    <p class="text-d-second">0986689139</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <i
+                      class="ri-home-5-line text-2xl text-d-second hover:text-blue-500"
+                    ></i>
+                    <p class="text-d-second">Duy Tân, Cầu Giấy, Hà Nội</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
-
     <!-- Main modal -->
+
     <div
       id="authentication-modal"
       tabindex="-1"
